@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Record Life'>
-<title>Categories</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=''>
+<title>Search</title>
 
-<link rel='canonical' href='https://sub-chandra.github.io/categories/'>
+<link rel='canonical' href='https://sub-chandra.github.io/page/search/'>
 
-<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='Categories'>
-<meta property='og:description' content='Record Life'>
-<meta property='og:url' content='https://sub-chandra.github.io/categories/'>
+<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='Search'>
+<meta property='og:description' content=''>
+<meta property='og:url' content='https://sub-chandra.github.io/page/search/'>
 <meta property='og:site_name' content='Chandrasekhar&#39;s Blog'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2023-10-16T16:59:04&#43;08:00 '/>
+<meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:site" content="@ChandraOpenAcc">
-    <meta name="twitter:creator" content="@ChandraOpenAcc"><meta name="twitter:title" content="Categories">
-<meta name="twitter:description" content="Record Life"><link rel="alternate" type="application/rss&#43;xml" href="https://sub-chandra.github.io/categories/index.xml">
+    <meta name="twitter:creator" content="@ChandraOpenAcc"><meta name="twitter:title" content="Search">
+<meta name="twitter:description" content=""><link rel="alternate" type="application/json" href="https://sub-chandra.github.io/page/search/index.json">
     <link rel="shortcut icon" href="/images/icon-astronomy-96.png" />
-
+<link rel="preload" href="/page/search/index.json" as="fetch" crossorigin="anonymous">
     </head>
-    <body class="">
+    <body class="template-search">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -108,7 +108,7 @@
         </li>
         
         
-        <li >
+        <li  class='current' >
             <a href='/page/search/' >
                 
                 
@@ -173,49 +173,34 @@
     </ol>
 </aside>
 
-    
-
             <main class="main full-width">
-    <header>
-        <h3 class="section-title">
-            
-                Section
-            
-        </h3>
+<form action="/page/search/" class="search-form"data-json="/page/search/index.json">
+    <p>
+        <label>Search</label>
+        <input name="keyword" placeholder="Type something..." />
+    </p>
 
-        <div class="section-card">
-            <div class="section-details">
-                <h3 class="section-count">1 page</h3>
-                <h1 class="section-term">Categories</h1>
-                
-            </div>
-        </div>
-    </header>
-        
-    
-    <section class="article-list--compact">
-        
-            <article>
-    <a href="/categories/test/">
-        <div class="article-details">
-            <h2 class="article-title">Test</h2>
-            <footer class="article-time">
-                <time datetime='0001-01-01T00:00:00Z'>Jan 01, 0001</time>
-            </footer>
-        </div>
-            <div class="article-image">
-                <img src="/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash_hu8102ac0a5989befdf52fa5096a373f78_52927_120x120_fill_q75_box_smart1.jpg" 
-                        width="120"
-                        height="120" 
-                        alt="Test"
-                        loading="lazy">
-                
-            </div>
-        
-    </a>
-</article>
-        
-    </section>
+    <button title="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+    </button>
+</form>
+
+<div class="search-result">
+    <h3 class="search-result--title section-title"></h3>
+    <div class="search-result--list article-list--compact"></div>
+</div>
+
+<script>
+    window.searchResultTitleTemplate = "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
+</script><script type="text/javascript" src="/ts/search.js" defer></script>
+
 <footer class="site-footer">
     <section class="copyright">
         &copy; 
