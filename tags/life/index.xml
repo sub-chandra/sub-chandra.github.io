@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Chandrasekhar&#39;s Blog</title>
-    <link>https://sub-chandra.github.io/posts/</link>
-    <description>Recent content in Posts on Chandrasekhar&#39;s Blog</description>
+    <title>life on Chandrasekhar&#39;s Blog</title>
+    <link>https://sub-chandra.github.io/tags/life/</link>
+    <description>Recent content in life on Chandrasekhar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Oct 2023 16:59:04 +0800</lastBuildDate><atom:link href="https://sub-chandra.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Oct 2023 16:59:04 +0800</lastBuildDate><atom:link href="https://sub-chandra.github.io/tags/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>读博日记 0：写在前面的话</title>
       <link>https://sub-chandra.github.io/posts/phd_note/phd_note_0/</link>
@@ -23,16 +23,6 @@
 ​	作此上文，聊以记录。
 2023 年 10 月 16 日
 于北京交通大学。</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://sub-chandra.github.io/posts/my-first-post/</link>
-      <pubDate>Fri, 13 Oct 2023 21:02:59 +0800</pubDate>
-      
-      <guid>https://sub-chandra.github.io/posts/my-first-post/</guid>
-      <description>This is test file.
-This is the test for git.</description>
     </item>
     
   </channel>
