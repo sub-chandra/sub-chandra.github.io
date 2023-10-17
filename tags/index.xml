@@ -6,20 +6,60 @@
         <description>Recent content in Tags on Chandrasekhar&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 16 Oct 2023 16:59:04 +0800</lastBuildDate><atom:link href="https://sub-chandra.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>life</title>
-        <link>https://sub-chandra.github.io/tags/life/</link>
-        <pubDate>Mon, 16 Oct 2023 16:59:04 +0800</pubDate>
+        <lastBuildDate>Tue, 17 Oct 2023 10:59:04 +0800</lastBuildDate><atom:link href="https://sub-chandra.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CodeLanguage</title>
+        <link>https://sub-chandra.github.io/tags/codelanguage/</link>
+        <pubDate>Tue, 17 Oct 2023 10:59:04 +0800</pubDate>
         
-        <guid>https://sub-chandra.github.io/tags/life/</guid>
+        <guid>https://sub-chandra.github.io/tags/codelanguage/</guid>
         <description></description>
         </item>
         <item>
         <title>Note</title>
         <link>https://sub-chandra.github.io/tags/note/</link>
-        <pubDate>Mon, 16 Oct 2023 16:59:04 +0800</pubDate>
+        <pubDate>Tue, 17 Oct 2023 10:59:04 +0800</pubDate>
         
         <guid>https://sub-chandra.github.io/tags/note/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Python</title>
+        <link>https://sub-chandra.github.io/tags/python/</link>
+        <pubDate>Tue, 17 Oct 2023 10:59:04 +0800</pubDate>
+        
+        <guid>https://sub-chandra.github.io/tags/python/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Tool</title>
+        <link>https://sub-chandra.github.io/tags/tool/</link>
+        <pubDate>Tue, 17 Oct 2023 10:59:04 +0800</pubDate>
+        
+        <guid>https://sub-chandra.github.io/tags/tool/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Tutorial</title>
+        <link>https://sub-chandra.github.io/tags/tutorial/</link>
+        <pubDate>Tue, 17 Oct 2023 10:59:04 +0800</pubDate>
+        
+        <guid>https://sub-chandra.github.io/tags/tutorial/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Web</title>
+        <link>https://sub-chandra.github.io/tags/web/</link>
+        <pubDate>Tue, 17 Oct 2023 10:59:04 +0800</pubDate>
+        
+        <guid>https://sub-chandra.github.io/tags/web/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>life</title>
+        <link>https://sub-chandra.github.io/tags/life/</link>
+        <pubDate>Mon, 16 Oct 2023 16:59:04 +0800</pubDate>
+        
+        <guid>https://sub-chandra.github.io/tags/life/</guid>
         <description></description>
         </item>
         

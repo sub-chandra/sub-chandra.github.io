@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Web 工具使用技巧'>
+<title> 图床（imhost）—— PicGo&#43;腾讯云对象存储COS&#43;Typora</title>
+
+<link rel='canonical' href='https://sub-chandra.github.io/posts/web/tool/%E5%9B%BE%E5%BA%8Aimhost-picgo&#43;%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8cos&#43;typora/'>
+
+<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content=' 图床（imhost）—— PicGo&#43;腾讯云对象存储COS&#43;Typora'>
+<meta property='og:description' content='Web 工具使用技巧'>
+<meta property='og:url' content='https://sub-chandra.github.io/posts/web/tool/%E5%9B%BE%E5%BA%8Aimhost-picgo&#43;%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8cos&#43;typora/'>
+<meta property='og:site_name' content='Chandrasekhar&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Note' /><meta property='article:tag' content='Web' /><meta property='article:tag' content='Tool' /><meta property='article:tag' content='Tutorial' /><meta property='article:published_time' content='2023-10-17T10:59:04&#43;08:00'/><meta property='article:modified_time' content='2023-10-17T10:59:04&#43;08:00'/>
+<meta name="twitter:site" content="@ChandraOpenAcc">
+    <meta name="twitter:creator" content="@ChandraOpenAcc"><meta name="twitter:title" content=" 图床（imhost）—— PicGo&#43;腾讯云对象存储COS&#43;Typora">
+<meta name="twitter:description" content="Web 工具使用技巧">
+    <link rel="shortcut icon" href="/images/icon-astronomy-96.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/images/src.png" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Chandrasekhar&#39;s Blog</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/web/tool/%E5%9B%BE%E5%BA%8Aimhost-picgo&#43;%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8cos&#43;typora/"> 图床（imhost）—— PicGo&#43;腾讯云对象存储COS&#43;Typora</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Web 工具使用技巧
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 17, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="图床imhost-picgo腾讯云对象存储costypora">图床（imhost）—— PicGo+腾讯云对象存储COS+Typora</h1>
+<h2 id="概念介绍">概念介绍</h2>
+<ol>
+<li>图床（Imhost）：简单来说，将图片上传服务器，每张图片获得一个连接。在任意联网设备访问此连接，即可显示图片，主要用于<code>.html</code>，<code>.md</code>等文件中。</li>
+<li><a class="link" href="https://curl.qcloud.com/i4ly02I3"  target="_blank" rel="noopener"
+    >Tencent COS</a>：提供提供对象存储的服务，可以储存多种类型文件。</li>
+<li>Typora：一种<code>markdown</code>编辑器</li>
+</ol>
+<h2 id="工具"><strong>工具</strong></h2>
+<ol>
+<li><a class="link" href="https://github.com/Molunerfinn/PicGo/releases"  target="_blank" rel="noopener"
+    >Picgo</a></li>
+<li><a class="link" href="https://console.cloud.tencent.com/cos"  target="_blank" rel="noopener"
+    >腾讯云COS（对象存储）</a></li>
+<li><a class="link" href="typora.io" >Typora</a></li>
+</ol>
+<h2 id="操作步骤"><strong>操作步骤</strong></h2>
+<h3 id="购买腾讯云cos资源包"><strong>购买腾讯云COS资源包</strong></h3>
+<blockquote>
+<p>访问：https://curl.qcloud.com/i4ly02I3，购买资源包</p>
+</blockquote>
+<h3 id="picgo设置"><strong>PicGo设置</strong></h3>
+<ol>
+<li>创建储存桶🧳：
+<ul>
+<li>名称：例如test-给定的一串数字</li>
+<li>公有读私有写（必须共有读，否则图片无法加载）</li>
+</ul>
+</li>
+<li>创建密钥🔑
+<ul>
+<li>使用现有的，或者创建</li>
+<li>获得APPID、Secretld、DecreKey</li>
+</ul>
+</li>
+<li>从上面Github的地址下载PicGo</li>
+<li>在PicGo中设置
+<ul>
+<li>图床版本选择V5(选择V4则无法使用，原因不明)</li>
+<li>APPID、Secretld、DecreKey为上面提到的密钥界面提供的三个值</li>
+<li>设定储存空间名：为创建储存桶的名称，例如：test-给定的一串数字</li>
+<li>储存区域：创建的储存桶所属区域（）中的内容，例如：ap-nanjing</li>
+</ul>
+</li>
+</ol>
+<h2 id="tips">Tips</h2>
+<ol>
+<li>在<a class="link" href="https://github.com/Molunerfinn/PicGo/releases"  target="_blank" rel="noopener"
+    >Picgo</a>图床设置中选择V5，原因不明</li>
+<li><a class="link" href="https://github.com/Molunerfinn/PicGo/releases"  target="_blank" rel="noopener"
+    >Picgo</a>设置中：设置<code>Server</code>→端口:<code>36677</code>（和<a class="link" href="https://console.cloud.tencent.com/cos"  target="_blank" rel="noopener"
+    >Tencent COS</a>匹配）</li>
+<li>一切设置正常（<a class="link" href="https://console.cloud.tencent.com/cos"  target="_blank" rel="noopener"
+    >Tencent COS</a>上传图片正常），在PicGo设置中选择时间戳重命名→上传图片→取消</li>
+<li>在<a class="link" href="typora.io" >Typora</a>设置<a class="link" href="https://github.com/Molunerfinn/PicGo/releases"  target="_blank" rel="noopener"
+    >Picgo</a>作为图床时，在中文环境下设置：PicGo.app，在英文环境下只有PicGo-core，在中文中设置好后再改成英文环境，可行</li>
+</ol>
+<hr>
+<p>参考链接🔗
+<a class="link" href="https://blog.csdn.net/qq_41684621/article/details/114128635?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-114128635-blog-109720624.pc_relevant_paycolumn_v3&amp;spm=1001.2101.3001.4242.1&amp;utm_relevant_index=3"  target="_blank" rel="noopener"
+    >腾讯云COS对象存储+PicGo搭建图床教程</a>
+<a class="link" href="https://blog.csdn.net/qq_38576299/article/details/109720624?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109720624-blog-121218444.pc_relevant_paycolumn_v3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-109720624-blog-121218444.pc_relevant_paycolumn_v3&amp;utm_relevant_index=2"  target="_blank" rel="noopener"
+    >使用PicGo+腾讯云做图床</a>
+<a class="link" href="https://blog.csdn.net/weixin_44593310/article/details/123910255"  target="_blank" rel="noopener"
+    >PicGo和腾讯COS搭建图床</a>
+<a class="link" href="https://www.jianshu.com/p/4cd14d4ceb1d"  target="_blank" rel="noopener"
+    >手把手教你用Typora自动上传到picgo图床【教程与排坑】</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/note/">Note</a>
+        
+            <a href="/tags/web/">Web</a>
+        
+            <a href="/tags/tool/">Tool</a>
+        
+            <a href="/tags/tutorial/">Tutorial</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/posts/cs/language/python/python_%E8%AF%AD%E6%B3%95%E7%B3%96/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title"> Python： 语法糖</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/posts/phd_note/phd_note_0/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/images/phd_note/nju_north.jpg" loading="lazy" data-key="" data-hash="/images/phd_note/nju_north.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">读博日记 0：写在前面的话</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 Chandrasekhar&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
