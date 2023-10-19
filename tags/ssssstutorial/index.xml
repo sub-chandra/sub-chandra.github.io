@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Python on Chandrasekhar&#39;s Blog</title>
-        <link>https://sub-chandra.github.io/categories/python/</link>
-        <description>Recent content in Python on Chandrasekhar&#39;s Blog</description>
+        <title>sssss&#34;Tutorial&#34; on Chandrasekhar&#39;s Blog</title>
+        <link>https://sub-chandra.github.io/tags/ssssstutorial/</link>
+        <description>Recent content in sssss&#34;Tutorial&#34; on Chandrasekhar&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 17 Oct 2023 10:59:04 +0800</lastBuildDate><atom:link href="https://sub-chandra.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 17 Oct 2023 10:59:04 +0800</lastBuildDate><atom:link href="https://sub-chandra.github.io/tags/ssssstutorial/index.xml" rel="self" type="application/rss+xml" /><item>
         <title> Python： 语法糖</title>
         <link>https://sub-chandra.github.io/posts/cs/language/python/python_%E8%AF%AD%E6%B3%95%E7%B3%96/</link>
         <pubDate>Tue, 17 Oct 2023 10:59:04 +0800</pubDate>
         
         <guid>https://sub-chandra.github.io/posts/cs/language/python/python_%E8%AF%AD%E6%B3%95%E7%B3%96/</guid>
-        <description>&lt;h1 id=&#34;python-语法糖&#34;&gt;Python 语法糖&lt;/h1&gt;
+        <description>&lt;blockquote&gt;
+&lt;p&gt;本文只包含部分内容，后续待完善。
+本文叙事风格为备忘录形式，而不是教程，适合有一定 &lt;code&gt;Python&lt;/code&gt; 基础者阅读，后续考虑改变行文叙事，使其适合初学者。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;装饰器&#34;&gt;装饰器&lt;/h2&gt;
 &lt;p&gt;Python 中一个著名的语法糖就是装饰器。装饰器是一种闭包（即函数嵌套函数），其作用在于拓宽原函数的功能，可以在不对原函数作任何修改的情况下，拓宽函数的功能，同时有效避免重复代码，增加了代码的可读性。&lt;/p&gt;
 &lt;p&gt;下面以除法作简单示例，在除法中除数不能为零，所以在两数相除前应当检查除数是否为零：&lt;/p&gt;
