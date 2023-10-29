@@ -41,21 +41,6 @@
     <loc>https://sub-chandra.github.io/page/</loc>
     <lastmod>2023-10-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sub-chandra.github.io/posts/cs/language/python/python_%E8%AF%AD%E6%B3%95%E7%B3%96/</loc>
-    <lastmod>2023-10-17T10:59:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sub-chandra.github.io/categories/codelanguage/</loc>
-    <lastmod>2023-10-17T10:59:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sub-chandra.github.io/tags/python/</loc>
-    <lastmod>2023-10-17T10:59:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sub-chandra.github.io/tags/skill/</loc>
-    <lastmod>2023-10-17T10:59:04+08:00</lastmod>
-  </url><url>
-    <loc>https://sub-chandra.github.io/tags/tutorial/</loc>
-    <lastmod>2023-10-17T18:59:04+08:00</lastmod>
-  </url><url>
     <loc>https://sub-chandra.github.io/categories/note/</loc>
     <lastmod>2023-10-16T16:59:04+08:00</lastmod>
   </url><url>
@@ -65,8 +50,14 @@
     <loc>https://sub-chandra.github.io/posts/life/phd_note/phd_note_0/</loc>
     <lastmod>2023-10-16T16:59:04+08:00</lastmod>
   </url><url>
+    <loc>https://sub-chandra.github.io/posts/cs/language/python/python_%E8%AF%AD%E6%B3%95%E7%B3%96/</loc>
+    <lastmod>2023-10-17T12:59:04+08:00</lastmod>
+  </url><url>
     <loc>https://sub-chandra.github.io/posts/web/tool/%E5%9B%BE%E5%BA%8Aimhost-picgo&#43;%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8cos&#43;typora/</loc>
     <lastmod>2023-10-17T18:59:04+08:00</lastmod>
+  </url><url>
+    <loc>https://sub-chandra.github.io/categories/codelanguage/</loc>
+    <lastmod>2023-10-17T12:59:04+08:00</lastmod>
   </url><url>
     <loc>https://sub-chandra.github.io/tags/cos/</loc>
     <lastmod>2023-10-17T18:59:04+08:00</lastmod>
@@ -77,7 +68,16 @@
     <loc>https://sub-chandra.github.io/tags/picgo/</loc>
     <lastmod>2023-10-17T18:59:04+08:00</lastmod>
   </url><url>
+    <loc>https://sub-chandra.github.io/tags/python/</loc>
+    <lastmod>2023-10-17T12:59:04+08:00</lastmod>
+  </url><url>
+    <loc>https://sub-chandra.github.io/tags/skill/</loc>
+    <lastmod>2023-10-17T12:59:04+08:00</lastmod>
+  </url><url>
     <loc>https://sub-chandra.github.io/categories/tool/</loc>
+    <lastmod>2023-10-17T18:59:04+08:00</lastmod>
+  </url><url>
+    <loc>https://sub-chandra.github.io/tags/tutorial/</loc>
     <lastmod>2023-10-17T18:59:04+08:00</lastmod>
   </url><url>
     <loc>https://sub-chandra.github.io/categories/web/</loc>
