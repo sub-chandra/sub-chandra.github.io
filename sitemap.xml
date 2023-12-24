@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sub-chandra.github.io/categories/article/</loc>
+    <lastmod>2023-12-24T15:21:04+08:00</lastmod>
+  </url><url>
     <loc>https://sub-chandra.github.io/categories/bookjournal/</loc>
     <lastmod>2023-12-24T15:21:04+08:00</lastmod>
   </url><url>
@@ -14,6 +17,12 @@
     <loc>https://sub-chandra.github.io/tags/documentary/</loc>
     <lastmod>2023-12-24T15:21:04+08:00</lastmod>
   </url><url>
+    <loc>https://sub-chandra.github.io/tags/essay/</loc>
+    <lastmod>2023-12-24T15:21:04+08:00</lastmod>
+  </url><url>
+    <loc>https://sub-chandra.github.io/categories/essay/</loc>
+    <lastmod>2023-12-24T15:21:04+08:00</lastmod>
+  </url><url>
     <loc>https://sub-chandra.github.io/tags/journal/</loc>
     <lastmod>2023-12-24T15:21:04+08:00</lastmod>
   </url><url>
@@ -21,6 +30,9 @@
     <lastmod>2023-12-24T15:21:04+08:00</lastmod>
   </url><url>
     <loc>https://sub-chandra.github.io/posts/life/</loc>
+    <lastmod>2023-12-24T15:21:04+08:00</lastmod>
+  </url><url>
+    <loc>https://sub-chandra.github.io/tags/lyric/</loc>
     <lastmod>2023-12-24T15:21:04+08:00</lastmod>
   </url><url>
     <loc>https://sub-chandra.github.io/posts/</loc>
@@ -32,7 +44,13 @@
     <loc>https://sub-chandra.github.io/tags/thoughts/</loc>
     <lastmod>2023-12-24T15:21:04+08:00</lastmod>
   </url><url>
+    <loc>https://sub-chandra.github.io/posts/life/article/argument/china_model/</loc>
+    <lastmod>2023-12-24T15:21:04+08:00</lastmod>
+  </url><url>
     <loc>https://sub-chandra.github.io/posts/life/bookjournal/go_into_mao_zh/</loc>
+    <lastmod>2023-12-24T15:21:04+08:00</lastmod>
+  </url><url>
+    <loc>https://sub-chandra.github.io/posts/life/article/essay/unknown_1/</loc>
     <lastmod>2023-12-24T15:21:04+08:00</lastmod>
   </url><url>
     <loc>https://sub-chandra.github.io/categories/diary/</loc>
@@ -44,7 +62,7 @@
     <loc>https://sub-chandra.github.io/tags/symbol/</loc>
     <lastmod>2023-10-29T18:59:04+08:00</lastmod>
   </url><url>
-    <loc>https://sub-chandra.github.io/posts/life/diary/2023-10-29/</loc>
+    <loc>https://sub-chandra.github.io/posts/life/diary/2023/2023-10-29/</loc>
     <lastmod>2023-10-29T18:59:04+08:00</lastmod>
   </url><url>
     <loc>https://sub-chandra.github.io/categories/academy/</loc>

@@ -8,10 +8,10 @@
         <language>en-us</language>
         <lastBuildDate>Sun, 29 Oct 2023 17:59:04 +0800</lastBuildDate><atom:link href="https://sub-chandra.github.io/tags/symbol/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>随想集：量子力学中的 Nabla Symbol</title>
-        <link>https://sub-chandra.github.io/posts/life/diary/2023-10-29/</link>
+        <link>https://sub-chandra.github.io/posts/life/diary/2023/2023-10-29/</link>
         <pubDate>Sun, 29 Oct 2023 17:59:04 +0800</pubDate>
         
-        <guid>https://sub-chandra.github.io/posts/life/diary/2023-10-29/</guid>
+        <guid>https://sub-chandra.github.io/posts/life/diary/2023/2023-10-29/</guid>
         <description>&lt;p&gt;  $\nabla$ 符号的首次引出，应该是在微积分（数学分析）中。假设有一标量 $\varphi$ 和一矢量 $\vec{f}$ ，则 $\nabla\cdot\varphi , \nabla\cdot\vec{f}$ 分别是 $\varphi, \vec{f}$ 的梯度和散度。&lt;/p&gt;
 &lt;p&gt;  这一概念在《电动力学》（郭硕鸿）一书的附录中再次被介绍（或者说回忆） 。尽管这部分我学的并不太好，对其的内涵在此我也不想详谈，但是我们可以浅显的把 $\nabla$ 定义为以下公式：
 $$
