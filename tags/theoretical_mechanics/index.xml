@@ -62,7 +62,7 @@ $$&lt;/p&gt;
 &lt;p&gt;H is the function of the $q,p,t\to\quad \dot{q}&lt;em&gt;\alpha=\frac{\partial H}{\partial p&lt;/em&gt;\alpha}\quad \dot{p}&lt;em&gt;\alpha=-\frac{\partial H}{\partial q&lt;/em&gt;\alpha},\quad \frac{\partial H}{\partial t}=-\frac{\partial L}{\partial t}$&lt;/p&gt;
 &lt;h3 id=&#34;能量积分和循环积分&#34;&gt;能量积分和循环积分&lt;/h3&gt;
 &lt;p&gt;H不显含t，$H=T+V$&lt;/p&gt;
-&lt;h3 id=&#34;font-colororange求解方法font&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;strong&gt;求解方法&lt;/strong&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;font-colororange求解方法font&#34;&gt;&lt;font color=&#34;orange&#34;&gt;&lt;strong&gt;求解方法&lt;/strong&gt;&lt;/font&gt;&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;列出拉格朗日函数&lt;/li&gt;
 &lt;li&gt;列出$p_\alpha$ ，$H$&lt;/li&gt;
