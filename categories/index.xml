@@ -6,20 +6,28 @@
         <description>Recent content in Categories on Chandrasekhar&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 29 Oct 2023 17:59:04 +0800</lastBuildDate><atom:link href="https://sub-chandra.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Diary</title>
-        <link>https://sub-chandra.github.io/categories/diary/</link>
-        <pubDate>Sun, 29 Oct 2023 17:59:04 +0800</pubDate>
+        <lastBuildDate>Sun, 24 Dec 2023 15:21:04 +0800</lastBuildDate><atom:link href="https://sub-chandra.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>BookJournal</title>
+        <link>https://sub-chandra.github.io/categories/bookjournal/</link>
+        <pubDate>Sun, 24 Dec 2023 15:21:04 +0800</pubDate>
         
-        <guid>https://sub-chandra.github.io/categories/diary/</guid>
+        <guid>https://sub-chandra.github.io/categories/bookjournal/</guid>
         <description></description>
         </item>
         <item>
         <title>Life</title>
         <link>https://sub-chandra.github.io/categories/life/</link>
-        <pubDate>Sun, 29 Oct 2023 17:59:04 +0800</pubDate>
+        <pubDate>Sun, 24 Dec 2023 15:21:04 +0800</pubDate>
         
         <guid>https://sub-chandra.github.io/categories/life/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Diary</title>
+        <link>https://sub-chandra.github.io/categories/diary/</link>
+        <pubDate>Sun, 29 Oct 2023 17:59:04 +0800</pubDate>
+        
+        <guid>https://sub-chandra.github.io/categories/diary/</guid>
         <description></description>
         </item>
         <item>
