@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>light on Chandrasekhar&#39;s Blog</title>
+        <link>https://sub-chandra.github.io/tags/light/</link>
+        <description>Recent content in light on Chandrasekhar&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 24 Oct 2023 15:39:04 +0800</lastBuildDate><atom:link href="https://sub-chandra.github.io/tags/light/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>课程笔记：光的衍射</title>
+        <link>https://sub-chandra.github.io/posts/academy/physics/learningnote/diffraction/</link>
+        <pubDate>Tue, 24 Oct 2023 15:39:04 +0800</pubDate>
+        
+        <guid>https://sub-chandra.github.io/posts/academy/physics/learningnote/diffraction/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;《物理光学》课程学期期间学习笔记——光的衍射部分&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;一定义&#34;&gt;一、定义&lt;/h2&gt;
+&lt;p&gt;**1.衍射：**波在传播过程中遇到障碍物偏离几何路径传播（进入几何阴影区）的现象。$\rightarrow$ 和干涉同时存在  $\rightarrow$  是==一切波动==固有的特性&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.衍射屏和屏函数&lt;/strong&gt;： $\tilde{E_i} \ \rightarrow \ 衍射屏\  \rightarrow \ \tilde{E_t}$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.复振幅透射函数:&lt;/strong&gt;  $\tilde{t}(x,y)=\frac{\tilde{E_t}(x,y)}{\tilde{E_i}(x,y)} \rightarrow 瞳函数$&lt;/p&gt;
+&lt;h2 id=&#34;二衍射三要素&#34;&gt;二、衍射三要素&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;光源发出的光波&lt;/li&gt;
+&lt;li&gt;衍射物&lt;/li&gt;
+&lt;li&gt;衍射图形&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;三菲涅尔衍射和夫琅禾费衍射&#34;&gt;三、菲涅尔衍射和夫琅禾费衍射&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;菲涅尔衍射$\rightarrow$ 光源和接收屏在有限远处，满足傍轴近似&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;夫琅禾费衍射$\rightarrow$ 光源和接收屏在无限远处，满足远场近似&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;惠更斯-菲涅尔原理&#34;&gt;惠更斯-菲涅尔原理&lt;/h3&gt;
+&lt;p&gt;**含义：**波前上的每一个面元都可以看作是一个次级扰动中心，它们能产生球面子波。后一时刻的波前的位置是所有这些子波前的包络面&lt;/p&gt;
+&lt;p&gt;**相干叠加：**P点的振动是次波对P点的相干叠加的结果，波前$\Sigma$ 上任一点的复振幅：$E_Q=A\frac{exp(ikR)}{R}$ ，Q处小面元$d\sigma$ 发出的子波：$K(\theta)CE_Q d\sigma \frac{exp(ikRr)}{r}$&lt;/p&gt;
+&lt;p&gt;则$P$点的复振幅：
+$$
+E(P)=\iint\limits_{\Sigma&amp;rsquo;}CK(\theta)E_Q\frac{exp(ikr)}{r}d\sigma\=CE_Q\iint\limits_{\Sigma&amp;rsquo;}K(\theta)\frac{exp(ikr)}{r}d\sigma
+$$
+&lt;strong&gt;惠更斯-菲涅尔原理：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;波传到的任意点都是次波的中心&lt;/li&gt;
+&lt;li&gt;包围光源的任一波前上各次波在空间各点进行相干叠加&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;基尔霍夫衍射积分公式&#34;&gt;基尔霍夫衍射积分公式&lt;/h3&gt;
+&lt;p&gt;$$
+E(P)=\frac{1}{i\lambda} \iint\limits_\Sigma \frac{Aexp(ikl)}{l}\frac{exp(ikr)}{r}\frac{\cos \alpha_1+\cos \alpha_2}{2}d\sigma
+$$&lt;/p&gt;
+&lt;p&gt;**近似-1：**光源离开孔足够远 $\to$ 入射光视为垂直入射 $\to\ \cos \alpha_1=1,\cos \alpha_2=\cos \theta \to\ K(\theta)=\frac{1+\cos \theta}{2}$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\theta=0,K(\theta)=1 \to\ 波面法线法线方向上子波的振幅最大$&lt;/li&gt;
+&lt;li&gt;$\theta=\pi,K(\theta)=0\to\ 证明菲涅尔关于\theta=\frac{\pi}{2}时K(\theta)=0的结论时错误的$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;近似-2：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实际中，衍射孔线度 $\ll$ 光源、观察屏到衍射屏距离$\to \theta\ 变化很小\to K(\theta)可提出积分外，取K(\theta)=1$&lt;/li&gt;
+&lt;li&gt;实际中，$r$ 的变化不大，约取$\frac{1}{r}\approx\frac{1}{z_1}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;得简化的基尔霍夫公式：&lt;/strong&gt;
+$$
+\tilde{E}(P)=\frac{1}{i\lambda z_1}\iint\limits_\Sigma\tilde{E}(Q)exp(ikr)d\sigma
+$$
+&lt;strong&gt;近似-3：&lt;/strong&gt; 对 $r=z_1[1+(\frac{x-x_1}{z_1})^2+(\frac{y-y_1}{z_1})^2]$ 作二项展开，因为 $z_1\gg x,y,x_1,y_1$，有只取展开后的前两项
+$$
+r=z_1{1+\frac{1}{2}[\frac{(x-x_1)^2+(y-y_1)^2}{z^2_1}]}\to\ 菲涅尔近似
+$$&lt;/p&gt;
+&lt;h3 id=&#34;单缝夫琅禾费衍射&#34;&gt;单缝夫琅禾费衍射&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;光强：&lt;/strong&gt;   $I(P)=\frac{\sin^2 \alpha}{\alpha^2}=I_0\sin c^2\alpha$  ，其中$\alpha=\frac{\pi}{\lambda}a\sin\theta$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;振幅矢量法：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;暗纹：$\frac{\pi a}{\lambda}\sin\theta=k\pi$&lt;/li&gt;
+&lt;li&gt;明纹中心：$\tan\alpha=\alpha$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;菲涅尔半波带法：&lt;/strong&gt;
+$$
+\delta=a\sin \theta=k\frac{\lambda}{2}, \quad \left{\begin{matrix}
+k=2n-1, \quad n=1,2,3\dots \quad 亮纹\
+k=2n,\quad n=1,2,3\dots \quad 暗纹
+\end{matrix}\right.
+$$
+&lt;strong&gt;条纹角宽度：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;中央明纹半角宽度：$\frac{\lambda}{a}$&lt;/li&gt;
+&lt;li&gt;其他明纹：$\Delta\theta_k=\theta_{暗k+1}-\theta_{暗k}\approx\frac{\lambda}{a}$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;四圆孔圆环和多边形孔的夫琅禾费衍射&#34;&gt;四、圆孔、圆环和多边形孔的夫琅禾费衍射&lt;/h2&gt;
+&lt;h3 id=&#34;圆孔夫琅禾费衍射&#34;&gt;圆孔夫琅禾费衍射&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;光强：&lt;/strong&gt; $I_p=I_0[\frac{2J_1(\psi)}{\psi}]^2 \quad\to\ J_1(\psi):一级贝塞尔函数$&lt;/p&gt;
+&lt;p&gt;​			$J_1(\psi)的级数展开\quad J_1(\psi)=\frac{\psi}{2}-\frac{\psi^2}{2^2\cdot4}+\frac{\psi^3}{2^2\cdot4^2\cdot6}-\dots$&lt;/p&gt;
+&lt;p&gt;​			第一级：$\sin \theta=1.22\frac{\lambda}{D}$&lt;/p&gt;
+&lt;h3 id=&#34;圆环的夫琅禾费衍射&#34;&gt;圆环的夫琅禾费衍射&lt;/h3&gt;
+&lt;p&gt;$\varepsilon=\frac{R_1}{R_2}$ 接收屏上P点的光强：
+$$
+I(P)=\frac{I_0}{(1-\varepsilon^2)^2}[\frac{2J_1(\psi_2)}{\psi_2}-\varepsilon^2\frac{2J_1(\psi_1)}{\psi_1}]^2
+$$
+&lt;strong&gt;特点：&lt;/strong&gt; 中央为亮斑，周围是明暗相间的圆环；$\varepsilon$ 越大，中央亮斑越小，条纹向中心收缩&lt;/p&gt;
+&lt;h2 id=&#34;五成像仪器像分辨本领&#34;&gt;五、成像仪器像分辨本领&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;瑞利判据：&lt;/strong&gt; 点物$S_1$的艾里斑中心恰好与另一个点物$S_2$的艾里斑边缘（第一衍射极小）相重合时，恰好分辨两物点。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最小分辨角：&lt;/strong&gt; $\delta\varphi=1.22\lambda/D$&lt;/p&gt;
+&lt;h2 id=&#34;六衍射光栅&#34;&gt;六、衍射光栅&lt;/h2&gt;
+&lt;h3 id=&#34;分类&#34;&gt;分类&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;结构
+&lt;ul&gt;
+&lt;li&gt;一维光栅：平板等距划痕&lt;/li&gt;
+&lt;li&gt;二维&lt;/li&gt;
+&lt;li&gt;三维&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;材料
+&lt;ul&gt;
+&lt;li&gt;振幅型&lt;/li&gt;
+&lt;li&gt;位相型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;功能
+&lt;ul&gt;
+&lt;li&gt;透射式&lt;/li&gt;
+&lt;li&gt;反射式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;光栅衍射&#34;&gt;光栅衍射&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;光栅常数：&lt;/strong&gt; $d=a+b\quad a:透光,b:不透光$     $d=\frac{1}{N}$&lt;/p&gt;
+&lt;h4 id=&#34;缝间干涉因子&#34;&gt;缝间干涉因子&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;多振幅干涉：&lt;/strong&gt; 合振幅  $A=A_0\frac{\sin \frac{N\varphi}{2}}{\sin\frac{\varphi}{2}}$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;主极大：$d\sin\theta=k\lambda, \quad k=0, \pm 1, \pm 2, \dots$&lt;/li&gt;
+&lt;li&gt;暗纹：$d\sin \theta=\frac{k&amp;rsquo;}{N}\lambda ,\ k&amp;rsquo;为整数且\neq 0,\pm N, \pm 2N, \dots$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​	相邻主极大之间有 N-1个暗纹，N-2个次极大&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;缺级现象：&lt;/strong&gt; $k=\pm \frac{d}{a}k&amp;rsquo;, 其中k&amp;rsquo;为衍射级次$&lt;/p&gt;
+&lt;h4 id=&#34;光栅衍射光强公式&#34;&gt;光栅衍射光强公式&lt;/h4&gt;
+&lt;p&gt;$$
+I_P=I_0(\frac{\sin u}{u})^2\cdot(\frac{\sin N\beta}{\sin \beta})^2\
+u=\frac{\pi a\sin \theta}{\lambda},\quad \beta=\frac{\varphi}{2}=\frac{\pi d\sin\theta}{\lambda}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;谱线的半角宽度&#34;&gt;谱线的半角宽度&lt;/h3&gt;
+&lt;p&gt;$$
+\Delta\theta=\frac{\lambda}{Nd\cos\theta_K}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;倾斜入射时的光栅方程&#34;&gt;倾斜入射时的光栅方程&lt;/h3&gt;
+&lt;p&gt;$$
+d(\sin i\pm\sin\theta)=m\lambda
+$$&lt;/p&gt;
+&lt;h3 id=&#34;光谱色散&#34;&gt;光谱色散&lt;/h3&gt;
+&lt;p&gt;$$
+D=\frac{\delta\theta}{\delta\lambda}\
+D=\frac{K}{d\cos\theta}\to D_l=\frac{Kf&amp;rsquo;}{d\cos\theta}( 线色散本领 )\
+色分辨本领:R\equiv\frac{\lambda}{\Delta\lambda}=kN
+$$&lt;/p&gt;
+&lt;h4 id=&#34;棱镜&#34;&gt;棱镜&lt;/h4&gt;
+&lt;p&gt;色散本领：在最小偏向角时
+$$
+D=\frac{d\delta_m}{d\lambda}=(\frac{dn}{d\delta_m})^{-1}\frac{dn}{d\lambda},\quad\frac{dn}{d\lambda}\to棱镜材料的色散率\
+色散本领:D\frac{2\sin\frac{\alpha}{2}}{\sqrt{1-n^2\sin^2 \frac{\alpha}{2}}}\cdot\frac{dn}{d\lambda}\
+线色散:D_l=\frac{dl}{d\lambda}=Df&amp;rsquo;=\frac{2f&amp;rsquo;\sin\frac{\alpha}{2}}{\sqrt{1-n^2\sin^2\frac{\alpha}{2}}}\cdot\frac{dn}{d\lambda}
+$$
+色分辨本领：
+$$
+R=t\cdot\frac{dn}{d\lambda}
+$$&lt;/p&gt;
+&lt;h2 id=&#34;菲涅尔衍射&#34;&gt;菲涅尔衍射&lt;/h2&gt;
+&lt;h3 id=&#34;菲涅尔半波带法&#34;&gt;菲涅尔半波带法&lt;/h3&gt;
+&lt;p&gt;各半波带在P点的$\alpha_i$相邻带在Pd点产生的振动位相相反，合振动取决于：波带面积、距离、倾斜因子&lt;/p&gt;
+&lt;h4 id=&#34;小圆孔衍射&#34;&gt;小圆孔衍射&lt;/h4&gt;
+&lt;p&gt;露出半波带数
+$$
+n=\frac{\rho^2(R+r_0)}{Rr_0\lambda}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+a\sin\theta_x=n\lambda\quad\to\quad\text{Dark}\
+\tan\alpha=\alpha\quad\to\quad\text{Light(Page 168)}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\frac{I}{I_0}=\left [\frac{2J_1(Z)}{Z} \right ]^2\
+J_1(Z)=0\to\text{Dark},\quad\frac{d}{dZ}\frac{J_1(Z)}{Z}=0\to\text{Light}\quad\text{(Page 172)}
+$$&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

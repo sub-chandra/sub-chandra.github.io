@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=' '>
+<title>课程笔记：光的衍射</title>
+
+<link rel='canonical' href='https://sub-chandra.github.io/posts/academy/physics/learningnote/diffraction/'>
+
+<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='课程笔记：光的衍射'>
+<meta property='og:description' content=' '>
+<meta property='og:url' content='https://sub-chandra.github.io/posts/academy/physics/learningnote/diffraction/'>
+<meta property='og:site_name' content='Chandrasekhar&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='learning_note' /><meta property='article:tag' content='electrodynamics' /><meta property='article:tag' content='physics' /><meta property='article:tag' content='light' /><meta property='article:published_time' content='2023-10-24T15:39:04&#43;08:00'/><meta property='article:modified_time' content='2023-10-24T15:39:04&#43;08:00'/>
+<meta name="twitter:site" content="@ChandraOpenAcc">
+    <meta name="twitter:creator" content="@ChandraOpenAcc"><meta name="twitter:title" content="课程笔记：光的衍射">
+<meta name="twitter:description" content=" ">
+    <link rel="shortcut icon" href="/images/icon-astronomy-96.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/images/src.png" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Chandrasekhar&#39;s Blog</a></h1>
+            <h2 class="site-description">Record life. Share life.</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/sub-chandra'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/ChandraOpenAcc'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                <form action="/page/search/" class="search-form widget" >
+        <p>
+            <label>Search</label>
+            <input name="keyword" required placeholder="Type something..." />
+        
+            <button title="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+            </button>
+        </p>
+    </form>
+            
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一定义">一、定义</a></li>
+    <li><a href="#二衍射三要素">二、衍射三要素</a></li>
+    <li><a href="#三菲涅尔衍射和夫琅禾费衍射">三、菲涅尔衍射和夫琅禾费衍射</a>
+      <ul>
+        <li><a href="#惠更斯-菲涅尔原理">惠更斯-菲涅尔原理</a></li>
+        <li><a href="#基尔霍夫衍射积分公式">基尔霍夫衍射积分公式</a></li>
+        <li><a href="#单缝夫琅禾费衍射">单缝夫琅禾费衍射</a></li>
+      </ul>
+    </li>
+    <li><a href="#四圆孔圆环和多边形孔的夫琅禾费衍射">四、圆孔、圆环和多边形孔的夫琅禾费衍射</a>
+      <ul>
+        <li><a href="#圆孔夫琅禾费衍射">圆孔夫琅禾费衍射</a></li>
+        <li><a href="#圆环的夫琅禾费衍射">圆环的夫琅禾费衍射</a></li>
+      </ul>
+    </li>
+    <li><a href="#五成像仪器像分辨本领">五、成像仪器像分辨本领</a></li>
+    <li><a href="#六衍射光栅">六、衍射光栅</a>
+      <ul>
+        <li><a href="#分类">分类</a></li>
+        <li><a href="#光栅衍射">光栅衍射</a></li>
+        <li><a href="#谱线的半角宽度">谱线的半角宽度</a></li>
+        <li><a href="#倾斜入射时的光栅方程">倾斜入射时的光栅方程</a></li>
+        <li><a href="#光谱色散">光谱色散</a></li>
+      </ul>
+    </li>
+    <li><a href="#菲涅尔衍射">菲涅尔衍射</a>
+      <ul>
+        <li><a href="#菲涅尔半波带法">菲涅尔半波带法</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/academy/" >
+                Academy
+            </a>
+        
+            <a href="/categories/learningnote/" >
+                LearningNote
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/academy/physics/learningnote/diffraction/">课程笔记：光的衍射</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+             
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 24, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <blockquote>
+<p>《物理光学》课程学期期间学习笔记——光的衍射部分</p>
+</blockquote>
+<h2 id="一定义">一、定义</h2>
+<p>**1.衍射：**波在传播过程中遇到障碍物偏离几何路径传播（进入几何阴影区）的现象。$\rightarrow$ 和干涉同时存在  $\rightarrow$  是==一切波动==固有的特性</p>
+<p><strong>2.衍射屏和屏函数</strong>： $\tilde{E_i} \ \rightarrow \ 衍射屏\  \rightarrow \ \tilde{E_t}$</p>
+<p><strong>3.复振幅透射函数:</strong>  $\tilde{t}(x,y)=\frac{\tilde{E_t}(x,y)}{\tilde{E_i}(x,y)} \rightarrow 瞳函数$</p>
+<h2 id="二衍射三要素">二、衍射三要素</h2>
+<ol>
+<li>光源发出的光波</li>
+<li>衍射物</li>
+<li>衍射图形</li>
+</ol>
+<h2 id="三菲涅尔衍射和夫琅禾费衍射">三、菲涅尔衍射和夫琅禾费衍射</h2>
+<ul>
+<li>
+<p>菲涅尔衍射$\rightarrow$ 光源和接收屏在有限远处，满足傍轴近似</p>
+</li>
+<li>
+<p>夫琅禾费衍射$\rightarrow$ 光源和接收屏在无限远处，满足远场近似</p>
+</li>
+</ul>
+<h3 id="惠更斯-菲涅尔原理">惠更斯-菲涅尔原理</h3>
+<p>**含义：**波前上的每一个面元都可以看作是一个次级扰动中心，它们能产生球面子波。后一时刻的波前的位置是所有这些子波前的包络面</p>
+<p>**相干叠加：**P点的振动是次波对P点的相干叠加的结果，波前$\Sigma$ 上任一点的复振幅：$E_Q=A\frac{exp(ikR)}{R}$ ，Q处小面元$d\sigma$ 发出的子波：$K(\theta)CE_Q d\sigma \frac{exp(ikRr)}{r}$</p>
+<p>则$P$点的复振幅：
+$$
+E(P)=\iint\limits_{\Sigma&rsquo;}CK(\theta)E_Q\frac{exp(ikr)}{r}d\sigma\=CE_Q\iint\limits_{\Sigma&rsquo;}K(\theta)\frac{exp(ikr)}{r}d\sigma
+$$
+<strong>惠更斯-菲涅尔原理：</strong></p>
+<ol>
+<li>波传到的任意点都是次波的中心</li>
+<li>包围光源的任一波前上各次波在空间各点进行相干叠加</li>
+</ol>
+<h3 id="基尔霍夫衍射积分公式">基尔霍夫衍射积分公式</h3>
+<p>$$
+E(P)=\frac{1}{i\lambda} \iint\limits_\Sigma \frac{Aexp(ikl)}{l}\frac{exp(ikr)}{r}\frac{\cos \alpha_1+\cos \alpha_2}{2}d\sigma
+$$</p>
+<p>**近似-1：**光源离开孔足够远 $\to$ 入射光视为垂直入射 $\to\ \cos \alpha_1=1,\cos \alpha_2=\cos \theta \to\ K(\theta)=\frac{1+\cos \theta}{2}$</p>
+<ul>
+<li>$\theta=0,K(\theta)=1 \to\ 波面法线法线方向上子波的振幅最大$</li>
+<li>$\theta=\pi,K(\theta)=0\to\ 证明菲涅尔关于\theta=\frac{\pi}{2}时K(\theta)=0的结论时错误的$</li>
+</ul>
+<p><strong>近似-2：</strong></p>
+<ul>
+<li>实际中，衍射孔线度 $\ll$ 光源、观察屏到衍射屏距离$\to \theta\ 变化很小\to K(\theta)可提出积分外，取K(\theta)=1$</li>
+<li>实际中，$r$ 的变化不大，约取$\frac{1}{r}\approx\frac{1}{z_1}$</li>
+</ul>
+<p><strong>得简化的基尔霍夫公式：</strong>
+$$
+\tilde{E}(P)=\frac{1}{i\lambda z_1}\iint\limits_\Sigma\tilde{E}(Q)exp(ikr)d\sigma
+$$
+<strong>近似-3：</strong> 对 $r=z_1[1+(\frac{x-x_1}{z_1})^2+(\frac{y-y_1}{z_1})^2]$ 作二项展开，因为 $z_1\gg x,y,x_1,y_1$，有只取展开后的前两项
+$$
+r=z_1{1+\frac{1}{2}[\frac{(x-x_1)^2+(y-y_1)^2}{z^2_1}]}\to\ 菲涅尔近似
+$$</p>
+<h3 id="单缝夫琅禾费衍射">单缝夫琅禾费衍射</h3>
+<p><strong>光强：</strong>   $I(P)=\frac{\sin^2 \alpha}{\alpha^2}=I_0\sin c^2\alpha$  ，其中$\alpha=\frac{\pi}{\lambda}a\sin\theta$</p>
+<p><strong>振幅矢量法：</strong></p>
+<ul>
+<li>暗纹：$\frac{\pi a}{\lambda}\sin\theta=k\pi$</li>
+<li>明纹中心：$\tan\alpha=\alpha$</li>
+</ul>
+<p><strong>菲涅尔半波带法：</strong>
+$$
+\delta=a\sin \theta=k\frac{\lambda}{2}, \quad \left{\begin{matrix}
+k=2n-1, \quad n=1,2,3\dots \quad 亮纹\
+k=2n,\quad n=1,2,3\dots \quad 暗纹
+\end{matrix}\right.
+$$
+<strong>条纹角宽度：</strong></p>
+<ol>
+<li>中央明纹半角宽度：$\frac{\lambda}{a}$</li>
+<li>其他明纹：$\Delta\theta_k=\theta_{暗k+1}-\theta_{暗k}\approx\frac{\lambda}{a}$</li>
+</ol>
+<h2 id="四圆孔圆环和多边形孔的夫琅禾费衍射">四、圆孔、圆环和多边形孔的夫琅禾费衍射</h2>
+<h3 id="圆孔夫琅禾费衍射">圆孔夫琅禾费衍射</h3>
+<p><strong>光强：</strong> $I_p=I_0[\frac{2J_1(\psi)}{\psi}]^2 \quad\to\ J_1(\psi):一级贝塞尔函数$</p>
+<p>​			$J_1(\psi)的级数展开\quad J_1(\psi)=\frac{\psi}{2}-\frac{\psi^2}{2^2\cdot4}+\frac{\psi^3}{2^2\cdot4^2\cdot6}-\dots$</p>
+<p>​			第一级：$\sin \theta=1.22\frac{\lambda}{D}$</p>
+<h3 id="圆环的夫琅禾费衍射">圆环的夫琅禾费衍射</h3>
+<p>$\varepsilon=\frac{R_1}{R_2}$ 接收屏上P点的光强：
+$$
+I(P)=\frac{I_0}{(1-\varepsilon^2)^2}[\frac{2J_1(\psi_2)}{\psi_2}-\varepsilon^2\frac{2J_1(\psi_1)}{\psi_1}]^2
+$$
+<strong>特点：</strong> 中央为亮斑，周围是明暗相间的圆环；$\varepsilon$ 越大，中央亮斑越小，条纹向中心收缩</p>
+<h2 id="五成像仪器像分辨本领">五、成像仪器像分辨本领</h2>
+<p><strong>瑞利判据：</strong> 点物$S_1$的艾里斑中心恰好与另一个点物$S_2$的艾里斑边缘（第一衍射极小）相重合时，恰好分辨两物点。</p>
+<p><strong>最小分辨角：</strong> $\delta\varphi=1.22\lambda/D$</p>
+<h2 id="六衍射光栅">六、衍射光栅</h2>
+<h3 id="分类">分类</h3>
+<ol>
+<li>结构
+<ul>
+<li>一维光栅：平板等距划痕</li>
+<li>二维</li>
+<li>三维</li>
+</ul>
+</li>
+<li>材料
+<ul>
+<li>振幅型</li>
+<li>位相型</li>
+</ul>
+</li>
+<li>功能
+<ul>
+<li>透射式</li>
+<li>反射式</li>
+</ul>
+</li>
+</ol>
+<h3 id="光栅衍射">光栅衍射</h3>
+<p><strong>光栅常数：</strong> $d=a+b\quad a:透光,b:不透光$     $d=\frac{1}{N}$</p>
+<h4 id="缝间干涉因子">缝间干涉因子</h4>
+<p><strong>多振幅干涉：</strong> 合振幅  $A=A_0\frac{\sin \frac{N\varphi}{2}}{\sin\frac{\varphi}{2}}$</p>
+<ul>
+<li>主极大：$d\sin\theta=k\lambda, \quad k=0, \pm 1, \pm 2, \dots$</li>
+<li>暗纹：$d\sin \theta=\frac{k&rsquo;}{N}\lambda ,\ k&rsquo;为整数且\neq 0,\pm N, \pm 2N, \dots$</li>
+</ul>
+<p>​	相邻主极大之间有 N-1个暗纹，N-2个次极大</p>
+<p><strong>缺级现象：</strong> $k=\pm \frac{d}{a}k&rsquo;, 其中k&rsquo;为衍射级次$</p>
+<h4 id="光栅衍射光强公式">光栅衍射光强公式</h4>
+<p>$$
+I_P=I_0(\frac{\sin u}{u})^2\cdot(\frac{\sin N\beta}{\sin \beta})^2\
+u=\frac{\pi a\sin \theta}{\lambda},\quad \beta=\frac{\varphi}{2}=\frac{\pi d\sin\theta}{\lambda}
+$$</p>
+<h3 id="谱线的半角宽度">谱线的半角宽度</h3>
+<p>$$
+\Delta\theta=\frac{\lambda}{Nd\cos\theta_K}
+$$</p>
+<h3 id="倾斜入射时的光栅方程">倾斜入射时的光栅方程</h3>
+<p>$$
+d(\sin i\pm\sin\theta)=m\lambda
+$$</p>
+<h3 id="光谱色散">光谱色散</h3>
+<p>$$
+D=\frac{\delta\theta}{\delta\lambda}\
+D=\frac{K}{d\cos\theta}\to D_l=\frac{Kf&rsquo;}{d\cos\theta}( 线色散本领 )\
+色分辨本领:R\equiv\frac{\lambda}{\Delta\lambda}=kN
+$$</p>
+<h4 id="棱镜">棱镜</h4>
+<p>色散本领：在最小偏向角时
+$$
+D=\frac{d\delta_m}{d\lambda}=(\frac{dn}{d\delta_m})^{-1}\frac{dn}{d\lambda},\quad\frac{dn}{d\lambda}\to棱镜材料的色散率\
+色散本领:D\frac{2\sin\frac{\alpha}{2}}{\sqrt{1-n^2\sin^2 \frac{\alpha}{2}}}\cdot\frac{dn}{d\lambda}\
+线色散:D_l=\frac{dl}{d\lambda}=Df&rsquo;=\frac{2f&rsquo;\sin\frac{\alpha}{2}}{\sqrt{1-n^2\sin^2\frac{\alpha}{2}}}\cdot\frac{dn}{d\lambda}
+$$
+色分辨本领：
+$$
+R=t\cdot\frac{dn}{d\lambda}
+$$</p>
+<h2 id="菲涅尔衍射">菲涅尔衍射</h2>
+<h3 id="菲涅尔半波带法">菲涅尔半波带法</h3>
+<p>各半波带在P点的$\alpha_i$相邻带在Pd点产生的振动位相相反，合振动取决于：波带面积、距离、倾斜因子</p>
+<h4 id="小圆孔衍射">小圆孔衍射</h4>
+<p>露出半波带数
+$$
+n=\frac{\rho^2(R+r_0)}{Rr_0\lambda}
+$$</p>
+<p>$$
+a\sin\theta_x=n\lambda\quad\to\quad\text{Dark}\
+\tan\alpha=\alpha\quad\to\quad\text{Light(Page 168)}
+$$</p>
+<p>$$
+\frac{I}{I_0}=\left [\frac{2J_1(Z)}{Z} \right ]^2\
+J_1(Z)=0\to\text{Dark},\quad\frac{d}{dZ}\frac{J_1(Z)}{Z}=0\to\text{Light}\quad\text{(Page 172)}
+$$</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/learning_note/">learning_note</a>
+        
+            <a href="/tags/electrodynamics/">electrodynamics</a>
+        
+            <a href="/tags/physics/">physics</a>
+        
+            <a href="/tags/light/">light</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/posts/academy/physics/learningnote/electrodynamics/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">课程笔记：电动力学知识点总结</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/academy/physics/learningnote/mechanics/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">课程笔记：理论力学知识点总结</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 Chandrasekhar&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

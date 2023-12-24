@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='课程笔记：理论力学知识点总结'>
+<title>课程笔记：理论力学知识点总结</title>
+
+<link rel='canonical' href='https://sub-chandra.github.io/posts/academy/physics/learningnote/mechanics/'>
+
+<link rel="stylesheet" href="/scss/style.min.24ef1cc321916467896e8c70c10c0ad7b98c2a8df14298032fb637216e397f50.css"><meta property='og:title' content='课程笔记：理论力学知识点总结'>
+<meta property='og:description' content='课程笔记：理论力学知识点总结'>
+<meta property='og:url' content='https://sub-chandra.github.io/posts/academy/physics/learningnote/mechanics/'>
+<meta property='og:site_name' content='Chandrasekhar&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='learning_note' /><meta property='article:tag' content='theoretical_mechanics' /><meta property='article:tag' content='physics' /><meta property='article:published_time' content='2023-10-24T15:39:04&#43;08:00'/><meta property='article:modified_time' content='2023-10-24T15:39:04&#43;08:00'/>
+<meta name="twitter:site" content="@ChandraOpenAcc">
+    <meta name="twitter:creator" content="@ChandraOpenAcc"><meta name="twitter:title" content="课程笔记：理论力学知识点总结">
+<meta name="twitter:description" content="课程笔记：理论力学知识点总结">
+    <link rel="shortcut icon" href="/images/icon-astronomy-96.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/images/src.png" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Chandrasekhar&#39;s Blog</a></h1>
+            <h2 class="site-description">Record life. Share life.</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/sub-chandra'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/ChandraOpenAcc'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                <form action="/page/search/" class="search-form widget" >
+        <p>
+            <label>Search</label>
+            <input name="keyword" required placeholder="Type something..." />
+        
+            <button title="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+            </button>
+        </p>
+    </form>
+            
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#微振动">微振动</a>
+      <ul>
+        <li><a href="#两个自由度保守体系的自由振动">两个自由度保守体系的自由振动</a></li>
+      </ul>
+    </li>
+    <li><a href="#哈密顿">哈密顿</a>
+      <ul>
+        <li><a href="#勒让德变换">勒让德变换</a></li>
+        <li><a href="#正则方程">正则方程</a></li>
+        <li><a href="#能量积分和循环积分">能量积分和循环积分</a></li>
+        <li><a href="#font-colororange求解方法font"><!-- raw HTML omitted --><strong>求解方法</strong><!-- raw HTML omitted --></a></li>
+        <li><a href="#泊松括号">泊松括号</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/academy/" >
+                Academy
+            </a>
+        
+            <a href="/categories/learningnote/" >
+                LearningNote
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/academy/physics/learningnote/mechanics/">课程笔记：理论力学知识点总结</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            课程笔记：理论力学知识点总结
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 24, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <blockquote>
+<p>《理论力学》课程学期期间学习笔记（期末总结）</p>
+</blockquote>
+<h2 id="微振动">微振动</h2>
+<p><strong>勒襄-狄里赫里定理：</strong>
+$$
+\frac{dV\frac{dV}{dq}=0\frac{dV}{dq}=0}{dq}=0,\frac{d^2V}{dq^2}&gt;0\
+\frac{dV}{dq_1}=\frac{dV}{dq_2}=0\
+\left{\begin{matrix}
+&amp;\left(\frac{\partial^2 V}{\partial q_1\partial q_2}\right)^2- \frac{\partial^2 V}{\partial q_1^2}\frac{\partial^2 V}{\partial q_1^2} &lt;0\
+&amp;\frac{\partial^2 V}{\partial q_1^2}&gt;0,\frac{\partial^2 V}{\partial q_2^2}&gt;0 \</p>
+<p>\end{matrix}\right.
+$$
+**线性振动：**力学体系在平衡位置附近作微振动</p>
+<h3 id="两个自由度保守体系的自由振动">两个自由度保守体系的自由振动</h3>
+<p><strong>动能：</strong>$T=\frac{1}{2}\sum\limits^2_{i,j=1}A_{ij}\dot{x}_i\dot{x}<em>j=\frac{1}{2}\left(A</em>{11}\dot{x}<em>1^2+2A</em>{12}\dot{x}_1\dot{x}<em>2+A</em>{22}\dot{x}^2_2\right)$</p>
+<p><strong>零点展开</strong></p>
+<p><strong>势能：</strong> $V(x_1,x_2)=\frac{1}{2}\sum\limits^2_{i,j=1}\left(\frac{\partial V^2}{\partial x_i\partial x_j}\right)<em>0x_ix_j=\frac{1}{2}(b</em>{11}x_1^2+2b_{12}x_1x_2+b_{22}x_2^2)$</p>
+<p><strong>动能：</strong> $T=\frac{1}{2}\left(a_{11}\dot{x}<em>1^2+2a</em>{12}\dot{x}_1\dot{x}<em>2+a</em>{22}\dot{x}^2_2\right)$</p>
+<p>得：
+$$
+\sum\limits_{j=1}^2(a_{ij}\ddot{x}<em>j+b</em>{ij}x_j)=0,\quad i=1,2\
+\text{试取解：}
+\left{\begin{matrix}
+&amp;x_1=A_1\sin(\omega t+\alpha)\
+&amp;x_2=A_2\sin(\omega t+\alpha)
+\end{matrix}\right.
+$$
+<strong>频率方程：</strong> $(b_{11}-a_{11}\omega^2)(b_{22}-a_{22}\omega^2)-(b_{12}-a_{12}\omega^2)^2=0$</p>
+<p>$a_{11},a_{22},b_{11},b_{22}&gt;0,\quad a_{11}a_{22}&gt;a_{12},b_{11}b_{22}&gt;b_{12}$</p>
+<h2 id="哈密顿">哈密顿</h2>
+<h3 id="勒让德变换">勒让德变换</h3>
+<p>新的函数等于不要的变量乘以原来的函数对该变量的偏微商再减去原来的函数。
+$$
+f=f(x,y),\quad df=udx+vdy\quad u=\frac{\partial f}{\partial x},v=\frac{\partial f}{\partial y}\
+\bar{f}(u,y)=f[x(u,y),y]\</p>
+<p>\left.\begin{matrix}
+&amp;\frac{\partial\bar{f}}{\partial y}=v+u\frac{\partial x}{\partial y}\
+&amp;\frac{\partial \bar{f}}{\partial u}=u\frac{\partial x}{\partial u}
+\end{matrix}\right}\</p>
+<p>\left.\begin{matrix}
+&amp;v=-\frac{\partial }{\partial y}(-\bar{f}+ux)=-\frac{\partial g}{\partial y}\
+&amp;x=-\frac{\partial }{\partial u}(-\bar{f}+ux)=-\frac{\partial g}{\partial y}
+\end{matrix}\right}
+$$</p>
+<h3 id="正则方程">正则方程</h3>
+<p>$\dot{q}<em>\alpha\to p</em>\alpha\Rightarrow H(p,q,t)=-L+\sum p_\alpha\dot{q}<em>\alpha\Rightarrow dH=\sum (-\dot{p}</em>\alpha dq_\alpha+p_\alpha d\dot{q}_\alpha)+\frac{\partial L}{\partial t}dt$</p>
+<p>H is the function of the $q,p,t\to\quad \dot{q}<em>\alpha=\frac{\partial H}{\partial p</em>\alpha}\quad \dot{p}<em>\alpha=-\frac{\partial H}{\partial q</em>\alpha},\quad \frac{\partial H}{\partial t}=-\frac{\partial L}{\partial t}$</p>
+<h3 id="能量积分和循环积分">能量积分和循环积分</h3>
+<p>H不显含t，$H=T+V$</p>
+<h3 id="font-colororange求解方法font"><!-- raw HTML omitted --><strong>求解方法</strong><!-- raw HTML omitted --></h3>
+<ol>
+<li>列出拉格朗日函数</li>
+<li>列出$p_\alpha$ ，$H$</li>
+<li>求出 $\dot{p}<em>\alpha$  ， $\dot{q}</em>\alpha$</li>
+</ol>
+<h3 id="泊松括号">泊松括号</h3>
+<p>$\left[\varphi,H\right]=\sum\limits_{\alpha =1}^s \left( \frac{\partial\varphi}{\partial q_\alpha}  \frac{\partial H}{\partial p_\alpha} - \frac{\partial\varphi}{\partial p_\alpha} \frac{\partial H}{\partial q_\alpha} \right)$ $\left.\begin{matrix}&amp;\dot{p}<em>\alpha=\left[p</em>\alpha,H\right]\ &amp;\dot{q}<em>\alpha=\left[q</em>\alpha,H\right] \end{matrix}\right}\quad(\alpha =1,2,3,\dots,s)$</p>
+<h4 id="泊松括号的特性">泊松括号的特性</h4>
+<ol>
+<li>$\left[c,\psi\right]=0$</li>
+<li>$\left[\varphi,\psi\right]+\left[\psi,\varphi\right]=0$</li>
+<li>$\left[\varphi,\psi\right]=\sum\limits^n_{j=1}\left[\varphi,\psi_j\right]$</li>
+<li>$\left[-\varphi,\psi\right]=-\left[\varphi,\psi\right]$</li>
+<li>$\frac{\partial}{\partial  t}\left[\varphi,\psi\right]=\left[\frac{\partial\varphi}{\partial t},\psi\right]+\left[\varphi,\frac{\partial\varphi}{\partial t}\right]$</li>
+<li>$\left[\theta,\left[\varphi,\psi\right]\right]+\left[\varphi,\left[\psi,\theta\right]\right]+\left[\psi,\left[\theta,\varphi\right]\right]$</li>
+<li>$\left[q_\alpha,p_\beta\right]=\delta_{\alpha\beta}=\left{\begin{matrix}&amp;1\quad(\alpha=\beta)\&amp;0\quad(\alpha\neq\beta)\end{matrix}\right.$</li>
+</ol>
+<p>第四章 刚体 100</p>
+<p>第五章  非惯性参考系 150</p>
+<p>第六章 多自由度体系的微振动 172</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/learning_note/">learning_note</a>
+        
+            <a href="/tags/theoretical_mechanics/">theoretical_mechanics</a>
+        
+            <a href="/tags/physics/">physics</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/posts/academy/physics/learningnote/diffraction/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">课程笔记：光的衍射</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/posts/academy/physics/learningnote/electrodynamics/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">课程笔记：电动力学知识点总结</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 Chandrasekhar&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
